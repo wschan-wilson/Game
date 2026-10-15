@@ -16,9 +16,9 @@ Source: [game specification](../Specifications%20of%20the%20game.md).
 - **Final transition:** Always show the completed round's results. The “Proceed” button opens the final screen when the match has ended; otherwise, it starts the next round.
 - **Restart:** The final screen has no “Play again” action; refresh the page to start a new match.
 
-## Decisions needed
+## Confirmed ending
 
-- **Ending:** Confirm that the human losing all lives ends the game immediately, even if bots remain, and that surviving as the only player is also a win.
+- **Ending:** The game ends when the human reaches zero lives (loss) or when the human is the only remaining active player (win).
 
 ## Acceptance criteria to preserve
 

@@ -6,6 +6,7 @@
 
 - There is no user-prescribed language or framework. The AI implementation agent should choose a minimal, well-supported stack that fits the repository and document the reason.
 - Do not persist the username, match state, or match history; a page refresh starts a fresh match and asks for the username again.
+- First implementation uses a dependency-free browser stack (HTML, CSS, and JavaScript modules) so the demo runs without a backend and without build tooling.
 
 ## Decisions needed
 

@@ -9,6 +9,7 @@
 - Every game action must be reachable and usable with a keyboard.
 - Publish a public, shareable demo after the game works; select hosting to fit the final technical stack.
 - Include an automated browser test that completes a match, in addition to game-rule unit tests.
+- Current implementation uses Node unit tests plus a Playwright end-to-end test that completes a full match flow.
 
 ## Decisions needed
 

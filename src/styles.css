@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  background: radial-gradient(circle at 20% 20%, #1f2a44, #0b1020 65%);
+  color: #edf2ff;
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.panel {
+  width: min(1000px, 100%);
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.5);
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+}
+
+.lead {
+  color: #c7d2fe;
+}
+
+.meta {
+  color: #a5b4fc;
+  font-size: 0.95rem;
+}
+
+.stack {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.timer {
+  text-align: center;
+  color: #fcd34d;
+}
+
+input,
+button {
+  border-radius: 12px;
+  border: 1px solid #94a3b8;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+input {
+  background: #0b1226;
+  color: #f8fafc;
+}
+
+button {
+  background: #1d4ed8;
+  color: #f8fafc;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.feedback {
+  min-height: 1.25rem;
+  margin: 0;
+}
+
+.feedback.error {
+  color: #fca5a5;
+}
+
+.feedback.success {
+  color: #86efac;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.stat {
+  background: rgba(30, 41, 59, 0.9);
+  border-radius: 14px;
+  padding: 0.75rem;
+  border: 1px solid rgba(125, 211, 252, 0.3);
+}
+
+.player-cards {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+
+.player-card {
+  background: rgba(30, 41, 59, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 16px;
+  padding: 0.75rem;
+}
+
+.player-card.eliminated {
+  opacity: 0.7;
+}
+
+.win {
+  color: #86efac;
+}
+
+.loss {
+  color: #fca5a5;
+}
+
+.chart {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+@media (max-width: 640px) {
+  .panel {
+    padding: 0.75rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
+
