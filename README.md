@@ -34,16 +34,28 @@ A browser-only playable demo for 1 human player vs 4 deterministic bots.
 
 This project is static HTML/CSS/JS and does not require a backend.
 
+### For players (play the demo)
+
+Open a terminal in the repository root and run:
+
+```powershell
+python -m http.server 8000
+```
+
+Then open this link in your browser:
+
+- Game: `http://localhost:8000/`
+
+### For developers (install dependencies and run tests)
+
 From repository root:
 
 ```powershell
 npm.cmd install
-python -m http.server 8000
 ```
 
-Then open:
+Optional browser test page:
 
-- Game: `http://localhost:8000/`
 - Tests: `http://localhost:8000/tests/`
 
 ## Automated checks
@@ -64,6 +76,8 @@ npm.cmd test
 ## CI automation
 
 GitHub Actions is configured in [ci.yml](./.github/workflows/ci.yml) to run on pushes to `main` and on pull requests.  
+Players do **not** need to run CI automation in their device console; CI runs automatically on GitHub for repository changes.
+
 It runs:
 
 1. `npm ci`
